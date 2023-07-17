@@ -24,10 +24,7 @@
     font-family: var(--ff-primary);
   }
   
-  button {
-    background-color: var(--primary-color);
-  }
-  
+
   .sr-only {
     position: absolute;
     width: 1px;
@@ -50,5 +47,103 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    margin: 2.5rem 0;
   }
 
+  header  h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+
+  .search {
+    display: flex;
+    align-items: center;
+  }
+
+  .search input {
+    height: 3.2rem;
+    border: 1px solid #ccc;
+    border-radius: .4rem 0 0 .4rem;
+    padding: 0 .8rem;
+  }
+
+  .search button {
+        background-color: var(--primary-color);
+        border-radius: 0 .4rem .4rem 0;
+        height: 3.2rem;
+        border: none;
+        padding: 0 1rem;
+      
+  }
+
+  .search button:hover {
+    filter: brightness(1.1);
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+
+    box-shadow: 0 1rem 2rem -1rem rgba(0, 0, 0, 0.3);
+  }
+
+  table * {
+    font-size: 1.4rem;
+    color: var(--text-color);
+  }
+
+  table th {
+    background: var(--primary-color);
+    text-align: left;
+    font-weight: normal;
+    padding: 1.5rem;
+  }
+
+  table th:first-child {
+    border-top-left-radius: .4rem;
+  }
+
+  table th:last-child {
+    border-top-right-radius: .4rem;
+  }
+
+table tr:nth-child(odd) {
+    background: #ddd;
+}
+
+table tr:nth-child(even) {
+    background: #eee;
+}
+
+  table td {
+    padding: 1.5rem;
+    text-align: left;
+  }
+
+  td.user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  td.user img {
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  td.user a {
+    text-decoration: none;
+  }
+
+  td.user a p {
+    font-weight: bold;
+  }
+
+  td .remove {
+    background: none;
+    border: none;
+    color: red;
+  }
