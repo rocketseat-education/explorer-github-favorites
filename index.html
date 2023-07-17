@@ -1,64 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHub Favorites</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Github Favorites</title>
+
+  
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="app">
-        <header>
-            <h1>GitHub Favorites</h1>
-            <div class="search">
-                <label for="inputsearch">Usuário do GitHub</label>
-                <input type="text" name="githubuser" id="input-search" placeholder="Usuário do GitHub">
-                <button>&plus;</button>
-            </div>
-        </header>
-        <table>
-            <thead>
-                <tr>
-                    <th>Usuário</th>
-                    <th>Repositórios</th> 
-                    <th>Seguidores</th>  
-                    <th></th>          
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="user">
-                        <img src="https://github.com/maykbrito.png" alt="Imagem de Mayk Brito">
-                        <a href="https://github.com/maykbrito" target="_blank">
-                            <p>Mayk Brito</p>
-                            <span>maykbrito</span>
-                        </a>
-                    </td>
-                    <td class="repositories">
-                        76
-                    </td>
-                    <td class="followers">
-                        9589
-                    </td>
-                    <td>&times;</td>
-                </tr>
-                <tr>
-                    <td class="user">
-                        <img src="https://github.com/diego3g.png" alt="Imagem de Diego Fernandes">
-                        <a href="https://github.com/diego3g" target="_blank">
-                            <p>Diego Fernandes</p>
-                            <span>diego3g</span>
-                        </a>
-                    </td>
-                    <td class="repositories">
-                        48
-                    </td>
-                    <td class="followers">
-                        22503
-                    </td>
-                    <td>&times;</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+  <div id="app">
+    <header>
+      <h1>Github Favorites</h1>
+      <div class="search">
+        <label class="sr-only" for="input-search">Usuário do Github</label>
+        <input id="input-search" type="text" placeholder="Usuário do Github">
+        <button>&plus;</button>
+      </div>
+    </header>
+    <table>
+      <thead>
+        <tr>
+          <th>Usuário</th>
+          <th>Repositórios</th>
+          <th>Seguidores</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="user">
+            <img src="https://github.com/maykbrito.png" alt="Imagem de maykbrito">
+            <a href="https://github.com/maykbrito" target="_blank">
+              <p>Mayk Brito</p>
+              <span>maykbrito</span>
+            </a>
+          </td>
+          <td class="repositories">
+            76
+          </td>
+          <td class="followers">
+            9589
+          </td>
+          <td>
+            <button>&times;</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="user">
+            <img src="https://github.com/diego3g.png" alt="Imagem de maykbrito">
+            <a href="https://github.com/diego3g" target="_blank">
+              <p>Diego Fernandes</p>
+              <span>diego3g</span>
+            </a>
+          </td>
+          <td class="repositories">
+            48
+          </td>
+          <td class="followers">
+            22503
+          </td>
+          <td>
+            <button>&times;</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </body>
 </html>
