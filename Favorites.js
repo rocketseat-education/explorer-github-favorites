@@ -6,28 +6,14 @@ export class Favorites {
 
     load() {
 
-        this.entries = [{
-            login: 'maykbrito',
-            name: 'Mayk Brito',
-            public_repos: '76',
-            followers: '9589'
-        },
-        {
-            login: 'diego3g',
-            name: 'Diego Fernandes',
-            public_repos: '48',
-            followers: '22503'
-        },
-    ]
-
-
-
-    }
+        this.entries = JSON.parse(localStorage.getItem('@github-favorites')) || []
+        }
     
     delete(user) {
         const filteredENtries = this.entries.filter(entry => entry.login !== user.login)
-        
-        console.log(filteredENtries)
+
+        this.entries = filteredENtries
+        this.update()
     }
 
 
